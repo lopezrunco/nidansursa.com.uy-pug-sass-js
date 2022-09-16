@@ -1,0 +1,13 @@
+header.header 
+    .container 
+        .row.align-items-center
+            .col-md-3
+                a(href="index.html")
+                    img(src="../dist/assets/nidansur-sa-maquinaria-vial-y-transporte-logo.png" alt='nidansur-sa-maquinaria-vial-y-transporte-logo')
+            each element in headerServices
+                .col-md-3.d-none.d-lg-block
+                    .item
+                        i.fa-solid.fa-chevron-right
+                        div
+                            h6.mb-0= element.title
+                            p= element.description
