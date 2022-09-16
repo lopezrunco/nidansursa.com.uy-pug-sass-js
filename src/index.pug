@@ -1,0 +1,22 @@
+include data/data.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description", content=`${titleDescription}`)
+        link(rel="shortcut icon", href="assets/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="css/main.css")
+        title #{siteName}
+        //- Font awesome CDN
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossOrigin="anonymous" referrerpolicy="no-referrer")
+        //- Bootstrap CDN
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css")
+    body 
+        include includes/top-header.pug
+
+        h1 Hello world!
+
+        include includes/footer.pug

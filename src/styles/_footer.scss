@@ -1,0 +1,29 @@
+@import '_variables.scss';
+
+.footer {
+    padding: 1rem 0;
+    background-color: $dark-bg;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.footer p,
+.footer a {
+    margin-bottom: .5rem;
+    color: $light-text;
+}
+
+.footer a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        text-align: left;
+    }
+}
