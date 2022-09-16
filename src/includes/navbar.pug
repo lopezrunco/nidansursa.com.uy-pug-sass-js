@@ -1,0 +1,13 @@
+nav.nav.navbar.navbar-expand-lg.navbar-dark.p-lg-0
+    .container.justify-content-end
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarSupportedContent
+            ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                each element in menu
+                    li.nav-item
+                        a(aria-current='page' href=`${element.link}`)= element.title
+            .d-none.d-lg-flex
+                a(href=`${mainPhone.link}`)
+                    p.phoneContact ¿Tiene una consulta? Llámenos al: 
+                        span #{mainPhone.phone}

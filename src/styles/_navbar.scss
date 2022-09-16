@@ -1,0 +1,25 @@
+nav.nav {
+    background-color: $dark-bg;
+
+    .nav-item > a {
+        color: $light-text;
+        padding: .8rem;
+        display: inline-block;
+
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+
+    .phoneContact {
+        margin-bottom: 0;
+        color: $light-text;
+        font-size: .8rem;
+        cursor: pointer;
+
+        span {
+            color: $primary-color;
+            font-weight: 700;
+        }
+    }
+}
