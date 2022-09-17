@@ -2,7 +2,7 @@ nav.nav {
     background-color: $dark-bg;
 
     .nav-item > a {
-        color: $light-text;
+        color: $light-text !important;
         padding: .8rem;
         display: inline-block;
 

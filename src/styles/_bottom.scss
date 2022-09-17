@@ -1,0 +1,56 @@
+.bottom {
+    background-color: $medium-light-bg;
+    font-size: .75rem;
+
+    a {
+        color: $color-text !important;
+    }
+
+    h6 {
+        text-transform: uppercase;
+        font-weight: 700;
+
+        &::before {
+            content: '';
+            width: 1.3rem;
+            height: 0.7rem;
+            margin-right: .3rem;
+            background: $primary-color;
+            display: inline-block;
+        }
+    }
+
+    ul {
+        padding: 0%;
+
+        li {
+            margin-bottom: .5rem;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .contact-info {
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        p i {
+            margin-right: .3rem;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
+    .bottom {
+        font-size: .85rem;
+    }
+
+    .bottom img {
+        cursor: pointer;
+    }
+}

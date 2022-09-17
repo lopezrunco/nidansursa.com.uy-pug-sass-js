@@ -16,11 +16,12 @@ body {
   margin: 0;
   font-family: $primary-font;
   color: $color-text;
+  line-height: 1.5rem;
 }
 
 a {
-  color: inherit;
-  text-decoration: none !important;
+  color: $primary-color;
+  text-decoration: none;
 
   &:hover,
   &:active {
@@ -34,6 +35,16 @@ ul {
 
 section {
   padding: $section-padding;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: .8rem;
 }
 
 /* Bootstrap navbar override styles */

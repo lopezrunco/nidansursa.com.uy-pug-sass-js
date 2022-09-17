@@ -1,0 +1,20 @@
+section.bottom
+    .container
+        .row.gy-3
+            .col-md-5
+                h6 Nuestra empresa
+                p #{aboutUsBottom}
+                .contact-info
+                    each contactInfoElement in contactInfo
+                        p 
+                            i(class=`${contactInfoElement.icon}`)
+                            a(href=`${contactInfoElement.link}` target='_blank') #{contactInfoElement.text}
+            .col-md-3
+                h6 Navegación
+                ul
+                    each menuElement in menu
+                        li
+                            a(href=`${menuElement.link}`)= menuElement.title
+            .col-md-4.d-none.d-md-block
+                a(href='/nuestra-empresa')
+                    img(src='../dist/assets/nidansur-sa-maquinaria-vial-transporte-sarandi-grande-florida-durazno.jpg' alt='nidansur-sa-maquinaria-vial-transporte-sarandi-grande-florida-durazno')
