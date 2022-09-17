@@ -1,0 +1,41 @@
+.servicesGrid .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.servicesGrid .item .icon {
+    border: 1px solid $border-color;
+    min-width: 4rem;
+    min-height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out .5s;
+}
+
+.servicesGrid .item .icon:hover,
+.servicesGrid .item .icon:active {
+    border-radius: 50%;
+    border-color: $color-text;
+}
+
+.servicesGrid .item .icon i {
+    font-size: 2rem;
+    color: $primary-color;
+}
+.servicesGrid .item h6 {
+    margin-bottom: 0;
+    font-weight: 700;
+    transition: $main-transition;
+}
+
+.servicesGrid .item h6:hover,
+.servicesGrid .item h6:hover {
+    margin-bottom: 0;
+    font-weight: 700;
+    color: $primary-color;
+}

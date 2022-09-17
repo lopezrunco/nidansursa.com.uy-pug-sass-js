@@ -47,6 +47,22 @@ p {
   margin-bottom: .8rem;
 }
 
+// Titles
+
+.title {
+  h3 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+
+  .separator {
+    width: 3rem;
+    height: .2rem;
+    background-color: $primary-color;
+    margin: 1rem 0 3rem;
+  }
+}
+
 /* Bootstrap navbar override styles */
 @media screen and (min-width:992px) {
   .navbar-nav .nav-link {

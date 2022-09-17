@@ -1,0 +1,17 @@
+section.my-5
+    .title
+        .container
+            .row
+                .col-12.d-flex.flex-column.justify-content-center.align-items-center.text-center
+                    h3 Nuestros 
+                        b servicios
+                    .separator
+    article.servicesGrid
+        .container
+            .row
+                each servicesElement in services
+                    .col-md-6.col-lg-4
+                        .item
+                            .icon
+                                i.fa-solid.fa-check
+                            h6 #{servicesElement}
