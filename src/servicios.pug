@@ -1,0 +1,36 @@
+include data/data.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description", content=`${titleDescription}`)
+        link(rel="shortcut icon", href="assets/favicon.ico", type="image/x-icon")
+        title #{siteName}
+        //- Font awesome CDN
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossOrigin="anonymous" referrerpolicy="no-referrer")
+        //- Bootstrap CDN
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css")
+        //- Custom CSS
+        link(rel="stylesheet", href="css/main.css")
+    body 
+        include includes/top-header.pug
+        include includes/header.pug
+        include includes/navbar.pug
+
+        .container 
+            .row 
+                .col-12
+                    .breadcrumb
+                        i.fa-solid.fa-location-dot
+                        a(href='index.html')
+                            p.index-path Inicio
+                        i.fa-solid.fa-chevron-right
+                        p.cleaned-path Servicios
+
+        include includes/bottom.pug
+        include includes/footer.pug
+
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js')
