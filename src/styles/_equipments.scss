@@ -1,0 +1,80 @@
+.equipment-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 250px);
+
+    .item {
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .image {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            transition: all .5s ease-in-out;
+        }
+
+        .equipment-title {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #00000082;
+            opacity: 0;
+
+            &:hover,
+            &:active {
+                opacity: 1;
+            }
+
+            p {
+                padding: 2rem;
+                color: $light-text;
+                text-align: center;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .equipment-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 250px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .equipment-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 250px);
+    }
+
+    .equipment-grid .item .title {
+        border: 7px solid $primary-color;
+        opacity: 0;
+        transition: $main-transition;
+    }
+
+    .equipment-grid .item:hover .title,
+    .equipment-grid .item:active .title {
+        opacity: 1;
+    }
+
+    .equipment-grid .item:hover .image,
+    .equipment-grid .item:active .image {
+        transform: scale(1.3);
+    }
+}
