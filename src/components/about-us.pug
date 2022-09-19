@@ -1,0 +1,22 @@
+section.container
+    article.row
+        .col-12
+            .title
+                .container
+                    .row
+                        .col-12.d-flex.flex-column.justify-content-center.align-items-center.text-center
+                            h3 Acerca de 
+                                b Nidansur S.A
+                            .separator
+article.row
+    .col-lg-5.mb-3
+        img(src=`${aboutUsInfo.mainImgSrc}` alt=`${aboutUsInfo.altMainImg}` class='w-100')
+    .col-lg-7
+        h4 #{aboutUsInfo.title}
+        each paragraph in aboutUsInfo.content
+            p #{paragraph}
+section.container.my-5
+    article.row
+        each imageSrc in aboutUsInfo.secondaryImgsSrc
+            .col-md-4
+                img(src=`../dist/assets/${imageSrc}` class='w-100')
